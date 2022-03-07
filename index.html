@@ -54,7 +54,7 @@
     <div id="poem"></div>
     <!-- script -->
     <script>
-      const article = `Government officials were warned repeatedly about making misleading claims about job figures before the official statistics watchdog reprimanded Boris Johnson over the matter. Ed Humpherson, the director general of the UK Statistics Authority (UKSA), said there had been “a series of informal discussions” before the regulator took the “unusual” step of issuing public rebukes to No 10 over the same issue twice last month. During more than half a dozen editions of prime minister’s questions since November, Johnson has made the misleading claim that more people are in employment in the UK than before the pandemic began. Yet, although the numbers of workers on payrolls has risen, the number of self-employed people has dropped significantly so that the total number of people in work is down by 600,000. The chair of the UKSA, Sir David Norgrove, wrote to Johnson saying he was making “a selective use of data” and added that “public trust requires a complete statement”.`;
+      const article = `In November, when Pauline Chalamet debuted in The Sex Lives of College Girls as Kimberly, many viewers were surprised to learn that Timothée Chalamet had an older sister, let alone one who acts. Although Pauline had made her feature film debut alongside Pete Davidson in Judd Apatow’s comedy The King of Staten Island a year before, it was her leading role in the HBO Max comedy-drama series that served as her big break. Pauline’s humorous performance as a dorky, sheltered, school-loving college student was sweet and tender and with the show having just been renewed for a new season, it also solidified the Chalamet siblings’ standing as a force to be reckoned with. Such is the cultural positioning of the Chalamets, that when I meet their mother, Nicole Flender, on a gray Tuesday afternoon at The Drama Bookshop in Manhattan, we lower our voices when mentioning Timothée to avoid being overheard by anyone shopping in the bookstore. I can see aspects of Timothée and Pauline in Flender – all three have petite noses and that same angular, youthful smile. But Flender has done a good job at being relatively unaffected by the fame of her children. “I’m happy that they’re successful and safe and healthy, and I would feel that way no matter what their profession was,” she tells me. As she passes along her vaccination card to a sales associate, no one assumes she is the mother of two successful actors, one rising, and the other Oscar-nominated.`;
       const button = document.getElementById("new-poem");
       function shuffleWords(list) {
         return list
@@ -76,7 +76,7 @@
       function assemblePoem(articleWords) {
         let lineText = "";
         for (const [counter, word] of articleWords.entries()) {
-          if ((counter + 1) % 5 == 0) {
+          if ((counter + 1) % 5 == 2) {
             addLine(lineText);
             lineText = "";
           } else {
